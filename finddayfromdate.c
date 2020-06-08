@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main () {
-	int d=27, m=6, y=2015, weekday ;
+	int d=1, m=1, y=1900, weekday ;
 	printf("Enter date, month and year: ");
 	scanf("%d %d %d",&d,&m,&y);
 	weekday = (d+=m<3?y--:y-2,23*m/9+d+4+y/4-y/100+y/400)%7  ;
